@@ -1,6 +1,5 @@
 # client program for the chat application
 
-import re
 import threading
 import socket
 

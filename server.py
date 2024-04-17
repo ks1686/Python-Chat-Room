@@ -1,4 +1,4 @@
-# Description: This file contains the server code for the chat application
+# This file contains the server code for the chat application
 
 import threading
 import socket
