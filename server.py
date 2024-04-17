@@ -5,7 +5,7 @@ import socket
 
 # Server configuration
 host = "localhost"
-port = 55555
+port = 65000
 
 # Create a socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # IPV4, TCP

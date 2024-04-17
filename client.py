@@ -9,7 +9,7 @@ nickname = input("Choose a nickname: ")  # Ask the user to choose a nickname
 
 # Client configuration
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # IPV4, TCP
-client.connect(("localhost", 55555))  # Connect to the server
+client.connect(("localhost", 65000))  # Connect to the server
 
 
 # Function to receive messages from the server
@@ -36,8 +36,8 @@ def write():
 
 
 # Create threads for receiving and writing messages
-receive_thread = threading.Thread(target=receive)
-receive_thread.start()
+receive_thread = threading.Thread(target=receive)  # Create thread for receiving
+receive_thread.start()  # Start the thread
 
-write_thread = threading.Thread(target=write)
-write_thread.start()
+write_thread = threading.Thread(target=write)  # Create thread for writing
+write_thread.start()  # Start the thread
